@@ -28,8 +28,11 @@
             <dvi id="bottom">
                 <dvi class="bottomright">
                     <b></b>
-                    <div class="hitokoto"></div>
-                    <div class="from"></div>
+<!--                    <div class="hitokoto"></div>
+                    <div class="from"></div>-->
+                    <div id="poem_sentence"></div><!--今日诗词[句子-->
+                    <div id="poem_info"></div><!--[详细信息]-->
+                
                 </dvi>
             </dvi>
         </dvi>
@@ -61,9 +64,20 @@
         formatDate("get-date", 'MM / dd | w');
         formatDate("get-time", 'HH : mm');
     </script>
+
 <!--##诗词一言获取接口-->
     <script type="text/javascript" src="assets/js/Hitokoto.js"></script>
 
+
+    <script src="assets/js/jinrishici.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      jinrishici.load(function(result) {
+        var sentence = document.querySelector("#poem_sentence")
+        var info = document.querySelector("#poem_info")
+        sentence.innerHTML = result.data.content
+        info.innerHTML = '——' + result.data.origin.dynasty + '•' + result.data.origin.author + '「' + result.data.origin.title + '」'
+      });
+    </script>
 
 </body>
 

@@ -7,3 +7,6 @@
 北京时间与日期显示[时钟]功能
 
 参考：<https://github.com/Sanksu/Countdowm-NMET>
+`api:
+<https://hitokoto.cn/>
+<https://www.jinrishici.com/>
