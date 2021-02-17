@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>二〇二一年高考倒计时</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/LZY.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css">
+    <script type="text/javascript" src="assets/js/Loading.js"></script>
+</head>
+
+<body>
+
+    <div id="top">
+        <div class="topright">
+            <b>勇敢的人,不是不落泪的人,</b><br>
+            <b>而是愿意含着泪继续奔跑的人</b><br>
+            <br>
+            <b>[全国高考]<dvi id="Timedown-gdgk"></dvi></b><br>
+            <b>[英语口语]<dvi id="Timedown-yyky"></dvi></b><br>
+            <b>[期末考试]<dvi id="Timedown-qmks"></dvi></b><br>
+        </div>
+        <dvi>
+            <dvi id="bottom">
+                <dvi class="bottomright">
+                    <b></b>
+                    <!--<div id="weather-v2-plugin-standard"></div>-->
+                    <div class="hitokoto"></div>
+                    <div class="from"></div>
+
+                </dvi>
+            </dvi>
+        </dvi>
+
+
+        <div id="footer">
+            <!--<div>
+                <dvi class="date-area">
+                    <div class="month">JAN</div>
+                    <div class="day">17</div>
+                    <div class="year">2021</div>
+            </div>-->
+
+            </dvi>
+            <dvi class="time-now">
+                <div class="large-time">
+                    <dvi id="get-time"></dvi><br>
+                </div>
+
+                <b>
+                    <dvi id="get-date"></dvi><br>
+                </b>
+            </dvi>
+
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/Timedown-Beta2-1.js"></script>
+    <script type="text/javascript">
+        TimeDown("Timedown-gdgk", "2021/06/06 22:00:00", "2021/06/07 17:00:00", "d");
+        TimeDown("Timedown-yyky", "2021/03/12 22:00:00", "2021/03/12 12:00:00", "d");
+        TimeDown("Timedown-qmks", "2021/02/03 22:00:00", "2021/02/05 17:00:00", "d");
+    </script>
+
+    <script src="assets/js/TimeGet.js"></script>
+    <script type="text/javascript">
+        formatDate("get-date", 'MM / dd | w');
+        formatDate("get-time", 'HH : mm');
+    </script>
+
+    <script type="text/javascript" src="assets/js/digiclock.js"></script>
+    <script type="text/javascript" src="assets/js/calendar/caleandar.js"></script>
+    <script type="text/javascript" src="assets/js/calendar/run.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/hongtonyoo/Countdowm-NMET@master/js/Hitokoto.js"></script>
+    <!--
+<script src="assets/js/Timedown---.js"></script>
+<script type="text/javascript">
+TimeDown("Timedown-gk", "2021/6/06 00:00:00");
+TimeDown("Timedown-yyky", "2021/3/13 00:00:00");
+TimeDown("Timedown-qzk", "2020/11/27 17:00:00");
+</script>
+-->
+
+
+    <script type="text/javascript" src="assets/js/Hitokoto.js"></script>
+
+
+    <script>
+        WIDGET = {
+            CONFIG: {
+                "layout": 2,
+                "width": "400",
+                "height": "480",
+                "background": 5,
+                "dataColor": "FFFFFF",
+                "language": "zh",
+                "borderRadius": "20",
+                "city": "CN101280105",
+                "key": "7rRdSPxRpI"
+            }
+        }
+    </script>
+    <script src="https://apip.weatherdt.com/standard/static/js/weather-standard-common.js?v=2.0"></script>
+</body>
+
+</html>
