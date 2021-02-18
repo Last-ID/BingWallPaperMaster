@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>二〇二一年高考倒计时</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" href="assets/img/LZY.png">
@@ -16,41 +17,55 @@
 
     <div id="top">
         <div class="topright">
-            <b>勇敢的人,不是不落泪的人,</b><br>
-            <b>而是愿意含着泪继续奔跑的人</b><br>
-            <br>
-            <b>[全国高考]<dvi id="Timedown-gdgk"></dvi></b><br>
-            <b>[英语口语]<dvi id="Timedown-yyky"></dvi></b><br>
-            <b>[期末考试]<dvi id="Timedown-kxks"></dvi></b><br>
-        </div>
-
-        <dvi>
-            <dvi id="bottom">
-                <dvi class="bottomright">
-                    <b></b>
-<!--                    <div class="hitokoto"></div>
-                    <div class="from"></div>-->
-                    <div id="poem_sentence"></div><!--今日诗词[句子-->
-                    <div id="poem_info"></div><!--[详细信息]-->
-                
-                </dvi>
-            </dvi>
-        </dvi>
-
-        <div id="footer">
-            </dvi>
-            <dvi class="time-now">
-                <div class="large-time">
-                    <dvi id="get-time"></dvi><br>
-                </div>
-                <b><dvi id="get-date"></dvi><br></b>
-            </dvi>
+            <b>我们要认真回顾走过的路，<br>
+                不能忘记来时的路，<br>
+                继续走好前行的路，<br>
+                坚定理想信念，牢记初心使命!<br>
+                [全国高考]<dvi id="Timedown-gdgk"></dvi><br>
+                [英语口语]<dvi id="Timedown-yyky"></dvi><br>
+                <!--[期末考试]<dvi id="Timedown-kxks"></dvi><br>-->
+            </b>
         </div>
     </div>
 
-<!--##下方是JavaScript脚本 ; JavaScripts Below -->
+    <dvi id="middle">
+        <div class="headline">
+            牛年大吉
+        </div>
+        <div class="text2">
+            老牛亦解韶光贵<br>
+            不待扬鞭自奋蹄
+        </div>
+    </dvi>
+        <dvi id="bottom">
+        <dvi class="bottomright">
+            <b>
+                <!--                    <div class="hitokoto"></div>
+                    <div class="from"></div>-->
+                <div id="poem_sentence"></div>
+                <!--今日诗词[句子-->
+                <div id="poem_info"></div>
+                <!--[详细信息]-->
+            </b>
+        </dvi>
+    </dvi>
 
-<!--##各类考试倒计时获取-->
+    <div id="footer">
+        </dvi>
+        <dvi class="time-now">
+            <div class="large-time">
+                <dvi id="get-time"></dvi><br>
+            </div>
+            <b>
+                <dvi id="get-date"></dvi><br>
+            </b>
+        </dvi>
+    </div>
+    </div>
+
+    <!--##下方是JavaScript脚本 ; JavaScripts Below -->
+
+    <!--##各类考试倒计时获取-->
     <script src="assets/js/Timedown-Beta2-2.js"></script>
     <script type="text/javascript">
         TimeDown("Timedown-gdgk", "2021/06/06 22:00:00", "2021/06/07 17:00:00", "d");
@@ -58,25 +73,25 @@
         TimeDown("Timedown-kxks", "2021/02/03 22:00:00", "2021/02/05 17:00:00", "d");
     </script>
 
-<!--##当前北京时间获取-->
+    <!--##当前北京时间获取-->
     <script src="assets/js/GetTime.js"></script>
     <script type="text/javascript">
         formatDate("get-date", 'MM / dd | w');
         formatDate("get-time", 'HH : mm');
     </script>
 
-<!--##诗词一言获取接口-->
+    <!--##诗词一言获取接口-->
     <script type="text/javascript" src="assets/js/Hitokoto.js"></script>
 
 
     <script src="assets/js/jinrishici.js" charset="utf-8"></script>
     <script type="text/javascript">
-      jinrishici.load(function(result) {
-        var sentence = document.querySelector("#poem_sentence")
-        var info = document.querySelector("#poem_info")
-        sentence.innerHTML = result.data.content
-        info.innerHTML = '——' + result.data.origin.dynasty + '•' + result.data.origin.author + '「' + result.data.origin.title + '」'
-      });
+        jinrishici.load(function (result) {
+            var sentence = document.querySelector("#poem_sentence")
+            var info = document.querySelector("#poem_info")
+            sentence.innerHTML = result.data.content
+            info.innerHTML = '——' + result.data.origin.dynasty + '•' + result.data.origin.author + '「' + result.data.origin.title + '」'
+        });
     </script>
 
 </body>
