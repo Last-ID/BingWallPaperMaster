@@ -33,6 +33,8 @@ function formatDate(id, str) {
         w: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][time.getDay()]
     };
     document.getElementById(id).innerHTML = str.replace(/([a-z]+)/ig, function(item) { return obj[item] });
+    //this line is to watch the result in console , you can remove it later	
+    //console.log("Refreshed"); 
     //延迟1000ms
     setTimeout(function() {
             formatDate(id, str);
