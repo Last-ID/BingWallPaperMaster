@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+import os
 
 
 def getHTMLText(url):
@@ -44,13 +44,15 @@ def main():
     #将名字中的/替换
     name=name.replace('/','_',5)
     print(name)
-	#储存在D:/bingpictures/下
+	#储存在D:/bing/下
     name='D:/bing/'+name+'.jpg'
-    bg_name='C:/s3c13/班务/wallpaper_engine/projects/myprojects/DigitalClock/assets/img/bg.jpg'
+    #bg_name='../img/bg.jpg'
+    bg_name="assets/img/bg.jpg"
     r=requests.get(pic)
     with open(name,'wb')as f:
         f.write(r.content)
     with open(bg_name,'wb')as fb:
         fb.write(r.content)
 main()
+
 	

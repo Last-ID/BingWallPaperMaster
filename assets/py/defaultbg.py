@@ -1,8 +1,10 @@
 import os
 import shutil
+def main():
+    project_path = "C:/Last_ID-mybugs/BingWallPaperMaster"
 
-project_path = "C:/Last_ID-mybugs/BingWallPaperMaster"
-
-img_dir = project_path+"/assets/img"
-os.chdir(img_dir)
-shutil.copyfile("defaultbg.png","bg.jpg")        # copy test_org.txt 为 test_copy.txt 若存在，则覆盖
+    img_dir = project_path+"/assets/img"
+    os.chdir(img_dir)
+    shutil.copyfile("defaultbg.png","bg.jpg")        #copy defaultbg.png 为 bg.jpg 若存在，则覆盖
+    print("copy "+img_dir)
+main()
