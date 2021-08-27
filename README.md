@@ -6,7 +6,7 @@
 * [x] 当前日期及时间  
 参考：[Sanksu Countdowm-NMET](https://github.com/Sanksu/Countdowm-NMET)
 
-## [必应(Bing)](www.bing.com)每日背景图片获取
+## 每日[bing](www.bing.com)背景图片获取
 
 * [x] 每日自动更换背景图片
 * [x] Wallpaper Engine支持
