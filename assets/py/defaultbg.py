@@ -1,7 +1,7 @@
 import os
 import shutil
 def main():
-    project_path = "C:/Last_ID-mybugs/BingWallPaperMaster"
+    project_path="G:/WallPaper"
 
     img_dir = project_path+"/assets/img"
     os.chdir(img_dir)

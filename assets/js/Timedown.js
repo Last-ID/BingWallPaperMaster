@@ -17,16 +17,12 @@ function TimeDown(id, endDateStr) {
     //秒
     var seconds = modulo % 60;
     //输出到页面
-    if (totalSeconds <= 0) {
-        document.getElementById(id).innerHTML = "已结束";
-    } else {
-        document.getElementById(id).innerHTML = " 仅剩" + days + "天"; //+ hours + "h " + minutes + "m " + seconds + "s "; 
-        //this line is to watch the result in console , you can remove it later	
-        //console.log("Timedown");
+    document.getElementById(id).innerHTML = " 仅剩" + days + "天" + hours + "h " + minutes + "m "; // + seconds + "s "; 
+    //this line is to watch the result in console , you can remove it later	
+    //console.log("Timedown");
 
-        //延迟一秒执行自己
-        setTimeout(function () {
-            TimeDown(id, endDateStr);
-        }, 100)
-    }
+    //延迟一秒执行自己
+    setTimeout(function() {
+        TimeDown(id, endDateStr);
+    }, 100)
 }

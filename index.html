@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <!-- 1、设置时间10秒刷新一次该页面 -->
     <title>二〇二一年高考倒计时</title>
     <link rel="icon" href="assets/img/LZY.png">
@@ -17,13 +16,9 @@
 
     <div id="top">
         <div class="topright">
-            <b>我们要认真回顾走过的路，<br>
-                不能忘记来时的路，<br>
-                继续走好前行的路，<br>
+            <b> 
                 坚定理想信念，牢记初心使命!<br>
-                [全国高考]<dvi id="Timedown-gdgk"></dvi><br>
-                [英语口语]<dvi id="Timedown-yyky"></dvi><br>
-                <!--[期末考试]<dvi id="Timedown-kxks"></dvi><br>-->
+                [开学报到]<dvi id="Timedown-dxbd"></dvi><br>
             </b>
         </div>
     </div>
@@ -37,7 +32,7 @@
             不待扬鞭自奋蹄
         </div-->
     </dvi>
-        <dvi id="bottom">
+    <dvi id="bottom">
         <dvi class="bottomright">
             <b>
                 <!--                    <div class="hitokoto"></div>
@@ -76,8 +71,8 @@
     <!--##各类考试倒计时获取-->
     <script src="assets/js/Timedown.js"></script>
     <script type="text/javascript">
-        TimeDown("Timedown-gdgk", "2021/06/06 22:00:00");
-        TimeDown("Timedown-yyky", "2021/03/12 22:00:00");
+        TimeDown("Timedown-dxbd", "2021/09/10 22:20:00");
+        //bug_TimeDown("Timedown-gzyc", "2021/03/16 22:20:00");
     </script>
 
     <!--##诗词一言获取接口
@@ -86,7 +81,7 @@
 
     <script src="assets/js/jinrishici.js" charset="utf-8"></script>
     <script type="text/javascript">
-        jinrishici.load(function (result) {
+        jinrishici.load(function(result) {
             var sentence = document.querySelector("#poem_sentence")
             var info = document.querySelector("#poem_info")
             sentence.innerHTML = result.data.content
@@ -95,17 +90,20 @@
     </script>
     <script src="assets/js/refreshAt.js"></script>
     <script type="text/javascript">
-        refreshAt(06,30,0)
-        refreshAt(07,10,0)
-        refreshAt(09,00,0)
-        refreshAt(12,00,0)
-        refreshAt(14,10,0)
-        refreshAt(16,45,0)
-        refreshAt(10,52,20)
-
-
+        refreshAt(06, 10, 0)
+        refreshAt(06, 20, 0)
+        refreshAt(06, 30, 0)
+        refreshAt(06, 40, 0)
+        refreshAt(06, 50, 0)
+        refreshAt(07, 00, 0)
+        refreshAt(09, 00, 0)
+        refreshAt(12, 00, 0)
+        refreshAt(14, 00, 0)
+        refreshAt(16, 45, 0)
+        refreshAt(10, 52, 20)
     </script>
 
 
 </body>
+
 </html>
