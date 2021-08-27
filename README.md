@@ -14,4 +14,4 @@
 **调用到的api**  
 <https://hitokoto.cn/>  
 <https://www.jinrishici.com/>  
-<https://www.bing.com/HPImageArchive.aspx?>
+<https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1>
